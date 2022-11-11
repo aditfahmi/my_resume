@@ -115,7 +115,7 @@ class MyApp extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 15.0,
                     width: 300.0,
                     child: Divider(
                       thickness: 2.0,
@@ -249,7 +249,7 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: 2.0,
+                    height: 5.0,
                   ),
                   Container(
                     alignment: Alignment.centerLeft,
@@ -262,52 +262,47 @@ class MyApp extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
-                    height: 2.0,
-                  ),
                   Column(
                     children: [
                       Card(
-                        shape: OutlineInputBorder(
+                        elevation: 10.0,
+                        shadowColor: Colors.purpleAccent.shade400,
+                        color: Colors.black.withOpacity(0.5),
+                        shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
-                          borderSide:
-                              BorderSide(color: Colors.white, width: 2.0),
+                          side: BorderSide(
+                              color: Colors.purple.shade800, width: 4.0),
                         ),
-                        color: Colors.purple.withOpacity(0.2),
                         child: Padding(
-                          padding: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Icon(
-                                Icons.workspace_premium_outlined,
+                                Icons.work_history_outlined,
+                                size: 40.0,
                                 color: Colors.white,
-                                size: 35.0,
                               ),
                               SizedBox(
-                                width: 20.0,
+                                width: 5.0,
                               ),
                               Column(
                                 children: [
                                   Text(
-                                    'PT. Supraco Indonesia',
+                                    'PT Supraco Indonesia',
                                     style: TextStyle(
-                                        color: Colors.white,
                                         fontSize: 20.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    height: 5.0,
+                                        color: Colors.white,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w900),
                                   ),
                                   Text(
                                     'Telecommunication Engineer',
                                     style: TextStyle(
-                                        color: Colors.white70,
-                                        fontSize: 15.0,
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontFamily: 'Poppins',
                                         fontWeight: FontWeight.w500),
-                                  ),
-                                  SizedBox(
-                                    height: 5.0,
                                   ),
                                   Row(
                                     children: [
@@ -316,68 +311,60 @@ class MyApp extends StatelessWidget {
                                         color: Colors.white,
                                       ),
                                       Text(
-                                        'Blora,Central Java',
+                                        'Blora, Central Java',
                                         style: TextStyle(
-                                            color: Colors.white70,
-                                            fontSize: 15.0,
-                                            fontWeight: FontWeight.w500),
-                                      ),
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w200),
+                                      )
                                     ],
-                                  ),
+                                  )
                                 ],
                               ),
                             ],
                           ),
                         ),
-                      )
-                    ],
-                  ),
-                  SizedBox(
-                    height: 5.0,
-                  ),
-                  Column(
-                    children: [
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                       Card(
-                        shape: OutlineInputBorder(
+                        elevation: 10.0,
+                        shadowColor: Colors.purpleAccent.shade400,
+                        color: Colors.black.withOpacity(0.5),
+                        shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
-                          borderSide:
-                              BorderSide(color: Colors.white, width: 2.0),
+                          side: BorderSide(
+                              color: Colors.purple.shade800, width: 4.0),
                         ),
-                        color: Colors.purple.withOpacity(0.2),
                         child: Padding(
-                          padding: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              Icon(
-                                Icons.workspace_premium_outlined,
-                                color: Colors.white,
-                                size: 35.0,
-                              ),
+                              Icon(Icons.work_history_outlined,
+                                  size: 40.0, color: Colors.white),
                               SizedBox(
-                                width: 20.0,
+                                width: 5.0,
                               ),
                               Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'PT. Huawei Tech Investment',
+                                    'PT Huawei Tech Investment',
                                     style: TextStyle(
-                                        color: Colors.white,
                                         fontSize: 20.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    height: 5.0,
+                                        color: Colors.white,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w900),
                                   ),
                                   Text(
                                     'Telecommunication Engineer',
                                     style: TextStyle(
-                                        color: Colors.white70,
-                                        fontSize: 15.0,
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                        fontFamily: 'Poppins',
                                         fontWeight: FontWeight.w500),
-                                  ),
-                                  SizedBox(
-                                    height: 2.0,
                                   ),
                                   Row(
                                     children: [
@@ -386,22 +373,23 @@ class MyApp extends StatelessWidget {
                                         color: Colors.white,
                                       ),
                                       Text(
-                                        'Surabaya,East Java',
+                                        'Surabaya, East Java',
                                         style: TextStyle(
-                                            color: Colors.white70,
-                                            fontSize: 15.0,
-                                            fontWeight: FontWeight.w500),
-                                      ),
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w200),
+                                      )
                                     ],
-                                  ),
+                                  )
                                 ],
                               ),
                             ],
                           ),
                         ),
-                      )
+                      ),
                     ],
-                  ),
+                  )
                 ],
               ),
             ),
