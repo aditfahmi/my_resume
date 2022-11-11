@@ -269,8 +269,10 @@ class MyApp extends StatelessWidget {
                     children: [
                       Card(
                         shape: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0),
-                            borderSide: BorderSide(color: Colors.white)),
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 2.0),
+                        ),
                         color: Colors.purple.withOpacity(0.2),
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
@@ -337,8 +339,10 @@ class MyApp extends StatelessWidget {
                     children: [
                       Card(
                         shape: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0),
-                            borderSide: BorderSide(color: Colors.white)),
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 2.0),
+                        ),
                         color: Colors.purple.withOpacity(0.2),
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
