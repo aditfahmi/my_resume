@@ -10,20 +10,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Colors.black, Colors.deepPurple.shade300],
-              begin: Alignment.center,
-              end: Alignment.bottomCenter),
-        ),
-        child: MaterialApp(
-          home: Scaffold(
-            backgroundColor: Colors.transparent,
-            appBar: AppBar(
-              backgroundColor: Colors.black45,
-            ),
-            body: SafeArea(
-                child: Padding(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            colors: [Colors.black, Colors.deepPurple.shade300],
+            begin: Alignment.center,
+            end: Alignment.bottomCenter),
+      ),
+      child: MaterialApp(
+        home: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: Colors.black45,
+          ),
+          body: SafeArea(
+            child: Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(
                 children: [
@@ -115,7 +115,7 @@ class MyApp extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 10.0,
                     width: 300.0,
                     child: Divider(
                       thickness: 2.0,
@@ -126,7 +126,6 @@ class MyApp extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Skills',
-                      textAlign: TextAlign.left,
                       style: TextStyle(
                           color: Color.fromARGB(214, 255, 255, 255),
                           fontFamily: 'Marhey',
@@ -134,27 +133,31 @@ class MyApp extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Card(
                         elevation: 12.0,
-                        shadowColor: Colors.white,
+                        shadowColor: Colors.purpleAccent.shade400,
                         shape: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0),
                           borderSide: BorderSide(
                               color: Colors.purple.shade800, width: 4.0),
                         ),
-                        color: Colors.blueGrey.shade100,
+                        color: Colors.black.withOpacity(0.65),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 20.0, vertical: 10.0),
+                              horizontal: 20.0, vertical: 13.5),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image(
                                 width: 30.0,
                                 height: 30.0,
-                                color: Colors.purple.shade800,
+                                color: Colors.purple.shade200,
                                 image:
                                     AssetImage('assets/icons/flutter_icon.png'),
                               ),
@@ -164,20 +167,243 @@ class MyApp extends StatelessWidget {
                               Text(
                                 'Flutter',
                                 style: TextStyle(
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontSize: 18.0,
                                     fontWeight: FontWeight.w500),
                               )
                             ],
                           ),
                         ),
+                      ),
+                      Card(
+                        elevation: 12.0,
+                        shadowColor: Colors.purpleAccent.shade400,
+                        shape: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(
+                              color: Colors.purple.shade800, width: 4.0),
+                        ),
+                        color: Colors.black.withOpacity(0.65),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 28.0, vertical: 15),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                width: 30.0,
+                                height: 30.0,
+                                color: Colors.purple.shade200,
+                                image: AssetImage('assets/icons/dart.png'),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text(
+                                'Dart',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Card(
+                        elevation: 12.0,
+                        shadowColor: Colors.purpleAccent.shade400,
+                        shape: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(
+                              color: Colors.purple.shade800, width: 4.0),
+                        ),
+                        color: Colors.black.withOpacity(0.65),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20.0, vertical: 13.5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                width: 30.0,
+                                height: 30.0,
+                                color: Colors.purple.shade200,
+                                image:
+                                    AssetImage('assets/icons/figma_icon.png'),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text(
+                                'Figma',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 2.0,
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Experience',
+                      style: TextStyle(
+                          color: Color.fromARGB(214, 255, 255, 255),
+                          fontFamily: 'Marhey',
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 2.0,
+                  ),
+                  Column(
+                    children: [
+                      Card(
+                        shape: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                            borderSide: BorderSide(color: Colors.white)),
+                        color: Colors.purple.withOpacity(0.2),
+                        child: Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.workspace_premium_outlined,
+                                color: Colors.white,
+                                size: 35.0,
+                              ),
+                              SizedBox(
+                                width: 20.0,
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    'PT. Supraco Indonesia',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 5.0,
+                                  ),
+                                  Text(
+                                    'Telecommunication Engineer',
+                                    style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  SizedBox(
+                                    height: 5.0,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on_outlined,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        'Blora,Central Java',
+                                        style: TextStyle(
+                                            color: Colors.white70,
+                                            fontSize: 15.0,
+                                            fontWeight: FontWeight.w500),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
                       )
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
+                  Column(
+                    children: [
+                      Card(
+                        shape: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                            borderSide: BorderSide(color: Colors.white)),
+                        color: Colors.purple.withOpacity(0.2),
+                        child: Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.workspace_premium_outlined,
+                                color: Colors.white,
+                                size: 35.0,
+                              ),
+                              SizedBox(
+                                width: 20.0,
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'PT. Huawei Tech Investment',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 5.0,
+                                  ),
+                                  Text(
+                                    'Telecommunication Engineer',
+                                    style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  SizedBox(
+                                    height: 2.0,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on_outlined,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        'Surabaya,East Java',
+                                        style: TextStyle(
+                                            color: Colors.white70,
+                                            fontSize: 15.0,
+                                            fontWeight: FontWeight.w500),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ],
               ),
-            )),
+            ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
