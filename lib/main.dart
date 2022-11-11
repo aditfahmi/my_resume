@@ -61,7 +61,8 @@ class MyApp extends StatelessWidget {
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontSize: 22.0,
-                                fontWeight: FontWeight.w900),
+                                fontWeight: FontWeight.w900,
+                                fontFamily: 'Marhey'),
                           ),
                           SizedBox(
                             height: 5.0,
@@ -71,7 +72,8 @@ class MyApp extends StatelessWidget {
                             style: TextStyle(
                                 color: Colors.white60,
                                 fontSize: 20.0,
-                                fontWeight: FontWeight.w600),
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'Poppins'),
                           ),
                           SizedBox(
                             height: 5.0,
@@ -91,12 +93,85 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                     color: Colors.white54,
                                     fontSize: 18.0,
-                                    fontWeight: FontWeight.w300),
+                                    fontWeight: FontWeight.w300,
+                                    fontFamily: 'Marhey'),
                               ),
                             ],
                           )
                         ],
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Text(
+                    'A fiber optic engineer who has more than 4 years of experience and switched careers as a UI UX Designer and future Flutter Developer.',
+                    style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w500,
+                        fontFamily: 'Poppins'),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                    width: 300.0,
+                    child: Divider(
+                      thickness: 2.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Skills',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          color: Color.fromARGB(214, 255, 255, 255),
+                          fontFamily: 'Marhey',
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Card(
+                        elevation: 12.0,
+                        shadowColor: Colors.white,
+                        shape: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(
+                              color: Colors.purple.shade800, width: 4.0),
+                        ),
+                        color: Colors.blueGrey.shade100,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20.0, vertical: 10.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                width: 30.0,
+                                height: 30.0,
+                                color: Colors.purple.shade800,
+                                image:
+                                    AssetImage('assets/icons/flutter_icon.png'),
+                              ),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Text(
+                                'Flutter',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
                     ],
                   )
                 ],
