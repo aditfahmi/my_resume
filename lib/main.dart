@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
             end: Alignment.bottomCenter),
       ),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
