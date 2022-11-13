@@ -4,7 +4,8 @@ New Flutter project for my UI challenge by creating Resume apps.
 This repository supports a series of posts that will show you how to build a flutter My Resume app. This project will have a black and purple theme.
 # Appearance
 
-  
+  ![my_resume](https://user-images.githubusercontent.com/33373361/201512728-e5ae2c72-0661-4da0-b234-ed50e2fa2ea7.png)
+
 
 
   
